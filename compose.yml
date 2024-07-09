@@ -1,0 +1,5 @@
+services:
+  lark:
+    build: .
+    volumes:
+      - ./config.yaml:/app/config/config.yaml
