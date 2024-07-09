@@ -1,3 +1,4 @@
+import axios from "axios";
 import generate from "./generate.js";
 
 class WebhookClient {
