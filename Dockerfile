@@ -5,6 +5,7 @@ WORKDIR /app
 
 COPY --chown=node:node ["package.json", "yarn.lock", "src", "./"]
 
+RUN npm i -g yarn
 RUN yarn install --production
 
 ENV CONFIG_PATH=/app/config/config.yaml
