@@ -11,7 +11,7 @@ FROM cgr.dev/chainguard/node
 
 WORKDIR /app
 
-COPY --from=build --chown=node:node ["/app/node_modules", "/src", "./"]
+COPY --from=build --chown=node:node ["/app/node_modules", "/app/src", "./"]
 
 ENV CONFIG_PATH=/app/config/config.yaml
 EXPOSE 3000
